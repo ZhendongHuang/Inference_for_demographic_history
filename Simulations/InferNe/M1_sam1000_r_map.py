@@ -602,7 +602,7 @@ for it in range(totaliter):
     print(sol)
 #############################
 
-    rss = sum(numpy.matmul(Xfit,sol)-Yfit)**2
+    rss = sum((numpy.matmul(Xfit,sol)-Yfit)**2)
     aa = numpy.matmul(numpy.transpose(Xfit1),Xfit1)
     bb= numpy.linalg.inv(aa)
     cc = numpy.matmul(Xfit,bb)
