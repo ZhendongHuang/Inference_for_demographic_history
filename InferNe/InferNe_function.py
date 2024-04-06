@@ -412,7 +412,7 @@ def est_pop_size(data_sites,data_genotypes,seq_length,sam_size_diploid,mu_ave, l
 
     #############################
 
-    rss = sum(numpy.matmul(Xfit,sol)-Yfit)**2
+    rss = sum((numpy.matmul(Xfit,sol)-Yfit)**2)
     aa = numpy.matmul(numpy.transpose(Xfit1),Xfit1)
     bb= numpy.linalg.inv(aa)
     cc = numpy.matmul(Xfit,bb)
