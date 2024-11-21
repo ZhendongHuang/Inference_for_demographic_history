@@ -1,1 +1,1 @@
-The InferNe program
+The InferNo program.
